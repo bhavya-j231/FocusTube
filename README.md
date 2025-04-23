@@ -7,17 +7,24 @@ A minimal YouTube web app designed for distraction-free watching and automatic n
 - ✅ Plays YouTube videos with a clean, focused interface
 - 📝 Generates notes automatically while watching
 - 🧠 Designed to boost productivity and learning
-- 🌙 Dark mode support (if applicable)
+- 🌙 Dark mode support
+- 🎥 YouTube player with URL parsing
 
 ## 🖥️ Tech Stack
 
-- **Frontend**: React / Next.js / TailwindCSS *(update as per your stack)*
-- **Backend**: Node.js / Express / Firebase / Supabase *(if used)*
-- **APIs**: YouTube Data API, AI Note Generation (OpenAI/Gemini?)
+- **Frontend**: 
+HTML5 – Structure of the webpage.
+CSS3 – Styling (custom themes, dark/bright mode).
+JavaScript (Vanilla JS) – Interactivity (YouTube video player, API calls, theme toggle).
+YouTube IFrame API – Embedding and controlling YouTube videos.
+- **Backend**: Python
+Flask – Web framework to handle routing, serve static files, and manage /generate-notes API.
+- **APIs**: YouTube Data API, AI Note Generation (OpenAI)
 
 ## 📸 Screenshots
 
-*(Add screenshots here if you have any)*
+*![image](https://github.com/user-attachments/assets/7eb2dba5-44c2-451b-b4ca-1dfa42c5bb81)
+*
 
 ## 🔧 Getting Started
 
@@ -27,25 +34,19 @@ A minimal YouTube web app designed for distraction-free watching and automatic n
    cd FocusTube
 
 
-Install dependencies
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
 
-bash
-Copy
-Edit
-npm install
-# or
-yarn install
+3. **Run the app**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
 
-Run the app
-
-bash
-Copy
-Edit
-npm run dev
-# or
-yarn dev
-
-License
+**License**
 This project is licensed under the MIT License.
 
 Made with ❤️ by @bhavya-j231
