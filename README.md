@@ -13,11 +13,11 @@ A minimal YouTube web app designed for distraction-free watching and automatic n
 ## 🖥️ Tech Stack
 
 - **Frontend**: 
-HTML5 – Structure of the webpage.
-CSS3 – Styling (custom themes, dark/bright mode).
-JavaScript (Vanilla JS) – Interactivity (YouTube video player, API calls, theme toggle).
+HTML5 – Structure of the webpage.<br>
+CSS3 – Styling (custom themes, dark/bright mode).<br>
+JavaScript (Vanilla JS) – Interactivity (YouTube video player, API calls, theme toggle).<br>
 YouTube IFrame API – Embedding and controlling YouTube videos.
-- **Backend**: Python
+- **Backend**: Python<br>
 Flask – Web framework to handle routing, serve static files, and manage /generate-notes API.
 - **APIs**: YouTube Data API, AI Note Generation (OpenAI)
 
@@ -34,19 +34,20 @@ Flask – Web framework to handle routing, serve static files, and manage /gener
    cd FocusTube
 
 
-2. **Install dependencies**
+2. **Create a virtual environment(optional)**
    ```bash
-   npm install
-   # or
-   yarn install
+   python -m venv venv
+   source venv/bin/activate
+   # On Windows: venv\Scripts\activate
 
-3. **Run the app**
+
+3. **Install dependencies**
    ```bash
-   npm run dev
-   # or
-   yarn dev
+   pip install -r requirements.txt
 
-**License**
-This project is licensed under the MIT License.
+4. **Run the app**
+   ```bash
+   python app.py
+
 
 Made with ❤️ by @bhavya-j231
