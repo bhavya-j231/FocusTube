@@ -1,0 +1,100 @@
+/* Global Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+/* Container layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.15);
+}
+
+/* Left panel */
+.left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.left h1 {
+  font-size: 2.5rem;
+  color: #00ffc8;
+  margin-bottom: 0.2em;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+input#videoIdInput {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2b2b2b;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #00ffc8;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #00c7a3;
+}
+
+/* YouTube player box */
+#player {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Right panel */
+.right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.right h2 {
+  font-size: 2rem;
+  color: #00ffc8;
+  margin-bottom: 15px;
+}
+
+#notesBox {
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 200px;
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+  color: #ccc;
+  font-family: monospace;
+}

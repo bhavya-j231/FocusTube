@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FocusTube</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>📺 FocusTube</h1>
+      <p class="subtitle">Watch YouTube videos & generate notes instantly</p>
+      <input id="videoIdInput" placeholder="Paste YouTube link or video ID">
+      <button onclick="loadVideo()">▶️ Play</button>
+      <div id="player"></div>
+    </div>
+    <div class="right">
+      <h2>📝 Notes</h2>
+      <pre id="notesBox">Click below to get notes...</pre>
+      <button onclick="getNotes()">Generate Notes</button>
+    </div>
+  </div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
